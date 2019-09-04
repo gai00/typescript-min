@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "serve -l 20000 public",
+    "build": "tsc -p src",
+    "watch": "tsc -p src -w"
+  },
+  "devDependencies": {
+    "serve": "^11.1.0",
+    "typescript": "^3.6.2"
+  }
+}

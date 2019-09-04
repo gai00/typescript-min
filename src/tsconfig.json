@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    // 通常是指到dist, 這邊是簡化
+    "outDir": "../public/js",
+    // 輸出單一檔案
+    // "outFile": "../public/js/index.js"
+    
+    // 瀏覽器比較新的話可以用這個，效能會好一點，尤其是async/await，舊瀏覽器GG
+    "target": "esnext",
+    // 從其他地方copy來的
+    "lib": [ "dom", "dom.iterable", "esnext" ],
+    
+    // Ref: https://blog.leodots.me/post/40-think-about-allowSyntheticDefaultImports.html
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    
+    // 輸出的格式
+    "module": "amd",
+    // 避免掉node_modules
+    "moduleResolution": "node",
+  }
+}
